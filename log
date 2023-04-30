@@ -42,3 +42,14 @@ Sun 30 Apr 2023 08:28:20 PM UTC:
  tests:  0|5
 total_score: 0/70
 1e8b20e
+Sun 30 Apr 2023 08:28:39 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:57:14: error: assignment to ‘List *’ from incompatible pointer type ‘Node *’ [-Werror=incompatible-pointer-types]
+   57 |         list = copy(n);
+      |              ^
+cc1: all warnings being treated as errors
+Compilation failed
+5d95eba
