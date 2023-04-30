@@ -54,7 +54,7 @@ List* get_adj_nodes(Node* n){
     int i = 0 , j = 0;
     while(i < 9){
       while(j < 9){
-        if(n->sudo[i][j] == NULL)
+        if(n->sudo[i][j] == 0)
           printf("hola\n");
         j++;
       }
