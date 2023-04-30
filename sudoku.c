@@ -63,8 +63,8 @@ List* get_adj_nodes(Node* n){
             pushBack(list, aux);
             cont++;
           }
-          int size = get_size(list);
-          printf("%d", size);
+          Node * aux2 = first(list);
+          print_node(aux2);
           return list;
         }
           
