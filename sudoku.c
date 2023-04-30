@@ -62,9 +62,8 @@ List* get_adj_nodes(Node* n){
             
             list = (List *) malloc(sizeof(List *));
             if(cont == 1)
-              pushFront(list, aux);
-            else
-              pushCurrent(list, aux);
+              first(list);
+            pushCurrent(list, aux);
             cont++;
           }
           return list;
