@@ -58,6 +58,7 @@ List* get_adj_nodes(Node* n){
         j++;
       }
       i++;
+      printf("\n");
     }
     return list;
 }
