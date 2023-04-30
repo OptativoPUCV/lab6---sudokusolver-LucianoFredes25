@@ -390,3 +390,14 @@ Sun 30 Apr 2023 10:14:02 PM UTC:
  tests:  0|5
 total_score: 0/70
 857f9da
+Sun 30 Apr 2023 10:15:04 PM UTC: 
+ sudoku.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:54:25: error: unused variable ‘cont’ [-Werror=unused-variable]
+   54 |     int i = 0 , j = 0 , cont = 1;
+      |                         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b9100e6
