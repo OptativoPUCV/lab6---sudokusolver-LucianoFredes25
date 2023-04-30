@@ -276,3 +276,13 @@ Sun 30 Apr 2023 10:00:47 PM UTC:
  tests:  0|5
 total_score: 0/70
 7405310
+Sun 30 Apr 2023 10:01:47 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:63:43: error: invalid application of ‘sizeof’ to incomplete type ‘List’
+   63 |             list = (List *) malloc(sizeof(List));
+      |                                           ^~~~
+Compilation failed
+6c57c76
