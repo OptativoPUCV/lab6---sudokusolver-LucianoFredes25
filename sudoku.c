@@ -60,11 +60,13 @@ List* get_adj_nodes(Node* n){
           while(cont < 10){
             aux->sudo[i][j] = cont;
             print_node(aux);
-            pushBack(list, aux);           
+            printf("---\n");
+            pushBack(list, aux);
+            Node * aux2 = first(list);
+            print_node(aux2);
             cont++;
           }
-          Node * aux2 = first(list);
-          print_node(aux2);
+          
           return list;
         }
           
