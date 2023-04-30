@@ -58,7 +58,7 @@ List* get_adj_nodes(Node* n){
       while(j < 9){
         if(n->sudo[i][j] == 0){
           while(cont < 10){
-            
+            list = (List *) malloc(sizeof(List *));
             pushFront(list, aux);
             cont++;
           }
