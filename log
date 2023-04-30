@@ -320,3 +320,9 @@ sudoku.c:66:28: error: invalid use of incomplete typedef ‘List’
       |                            ^~
 Compilation failed
 6bafedf
+Sun 30 Apr 2023 10:06:12 PM UTC: 
+ sudoku.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  0|5
+total_score: 0/70
+c8cb368
