@@ -94,3 +94,14 @@ sudoku.c:57:26: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 a2b4b0e
+Sun 30 Apr 2023 08:54:59 PM UTC: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:57:26: error: comparison between pointer and integer [-Werror]
+   57 |         if(n->sudo[i][j] == NULL)
+      |                          ^~
+cc1: all warnings being treated as errors
+Compilation failed
+0ae9f0f

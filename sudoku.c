@@ -56,6 +56,7 @@ List* get_adj_nodes(Node* n){
       while(j < 9){
         if(n->sudo[i][j] == NULL)
           printf("hola\n");
+        j++;
       }
       i++;
       j = 0;
