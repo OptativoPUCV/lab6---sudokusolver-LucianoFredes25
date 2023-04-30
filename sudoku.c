@@ -51,17 +51,17 @@ int is_valid(Node* n){
 
 List* get_adj_nodes(Node* n){
     List* list=createList();
-    int i = 0 , j = 0 , cont = 1;
+    int i = 0 , j = 0 , cont = 9;
     Node * aux = createNode();
     aux = copy(n);
     while(i < 9){
       while(j < 9){
         if(n->sudo[i][j] == 0){
-          while(cont < 10){
+          while(cont > 0){
             aux->sudo[i][j] = cont;
             list = (List *) malloc(sizeof(List *));
-            pushBack(list, aux);
-            cont++;
+            pushFront(list, aux);
+            cont--;
           }
           return list;
         }
