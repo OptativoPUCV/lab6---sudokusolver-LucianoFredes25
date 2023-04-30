@@ -61,9 +61,14 @@ List* get_adj_nodes(Node* n){
             aux->sudo[i][j] = cont;
             
             list = (List *) malloc(sizeof(List *));
-            if(cont == 1)
+            if(cont == 1){
               first(list);
-            pushCurrent(list, aux);
+              pushCurrent(list, aux);
+            }
+            else{
+              next(list);
+              pushCurrent(list, aux);
+            }
             cont++;
           }
           return list;
