@@ -59,11 +59,11 @@ List* get_adj_nodes(Node* n){
         if(n->sudo[i][j] == 0){
           while(cont < 10){
             aux->sudo[i][j] = cont;
-            print_node(aux);
             list = (List *) malloc(sizeof(List *));
             pushBack(list, aux);
             cont++;
           }
+          printf("%d", list->size);
           return list;
         }
           

@@ -310,3 +310,13 @@ Sun 30 Apr 2023 10:03:52 PM UTC:
  tests:  0|5
 total_score: 0/70
 f99d4af
+Sun 30 Apr 2023 10:05:03 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:66:28: error: invalid use of incomplete typedef ‘List’
+   66 |           printf("%d", list->size);
+      |                            ^~
+Compilation failed
+6bafedf
