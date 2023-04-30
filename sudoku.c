@@ -63,7 +63,8 @@ List* get_adj_nodes(Node* n){
             pushBack(list, aux);           
             cont++;
           }*/
-          aux->sudo[i][j] = 1;
+          aux->sudo[i][j] = cont;
+          pushBack(list, aux);
           Node * aux2 = first(list);
           print_node(aux2);
           return list;
