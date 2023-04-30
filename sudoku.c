@@ -72,6 +72,7 @@ List* get_adj_nodes(Node* n){
       j = 0;
       printf("\n");
     }
+  return list;
 }
 
 
