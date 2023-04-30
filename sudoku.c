@@ -63,7 +63,7 @@ List* get_adj_nodes(Node* n){
             pushBack(list, aux);
             cont++;
           }
-          Node * aux2 = first(list);
+          Node * aux2 = last(list);
           print_node(aux2);
           return list;
         }
