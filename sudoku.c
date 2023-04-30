@@ -62,17 +62,6 @@ List* get_adj_nodes(Node* n){
             pushBack(list, aux);
             cont++;
           }
-          cont = 1;
-          while(cont < 10)
-          {
-            Node * aux2 = createNode();
-            if(cont == 1)
-              aux2 = first(list);
-            else
-              aux2 = next(list);
-            print_node(aux2);
-            cont++;
-          }
           return list;
         }
           
