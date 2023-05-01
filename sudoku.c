@@ -52,8 +52,8 @@ int is_valid(Node* n){
 List* get_adj_nodes(Node* n){
     List* list=createList();
     int i = 0 , j = 0 , cont = 1;
-    Node * aux = createNode();
-    aux = copy(n);
+    Node * aux = n;
+    //aux = copy(n);
     while(i < 9){
       while(j < 9){
         if(n->sudo[i][j] == 0){
