@@ -489,3 +489,13 @@ Mon 01 May 2023 01:30:29 AM UTC:
  tests:  0|5
 total_score: 0/70
 8c1df77
+Mon 01 May 2023 01:32:20 AM UTC: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:62:17: error: invalid use of incomplete typedef ‘List’
+   62 |             list->first = aux;
+      |                 ^~
+Compilation failed
+db03ff5

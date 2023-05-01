@@ -59,6 +59,7 @@ List* get_adj_nodes(Node* n){
         if(n->sudo[i][j] == 0){
           while(cont < 10){
             aux->sudo[i][j] = cont;
+            list->first = aux;
             pushBack(list, aux);
             Node * aux2 = first(list);
             print_node(aux2);
