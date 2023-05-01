@@ -67,6 +67,7 @@ List* get_adj_nodes(Node* n){
             cont++;
           }
           int size = get_size(list);
+          printf("%d\n", size);
           return list;
         }
           
