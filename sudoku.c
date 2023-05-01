@@ -44,7 +44,25 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  print_node(n);
+  int i = 0 , j = 0 , k = 0 , numero , posX , posY;
+    
+    while(i < 9){
+      while(j < 9){
+        if(n->sudo[i][j] != 0){
+          numero = n->sudo[i][j];
+          posX = i;
+          posY = j
+          while(k < 9)
+            {
+              if(n->sudo[i][k] == numero && k != posY) return 0;
+              if(n->sudo[k][j] == numero && k != posX) return 0;
+            }
+        }
+        j++;
+      }
+      i++;
+      j = 0;
+    }
   return 1;
 }
 

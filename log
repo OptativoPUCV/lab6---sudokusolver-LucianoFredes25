@@ -559,3 +559,29 @@ Mon 01 May 2023 01:45:23 AM UTC:
  tests:  2|4
 total_score: 15/70
 e4896a1
+Mon 01 May 2023 03:18:43 AM UTC: 
+ sudoku.c | 20 +++++++++++++++++++-
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:54:19: error: expected ‘;’ before ‘while’
+   54 |           posY = j
+      |                   ^
+      |                   ;
+   55 |           while(k < 9)
+      |           ~~~~~    
+sudoku.c:47:47: error: variable ‘posY’ set but not used [-Werror=unused-but-set-variable]
+   47 |   int i = 0 , j = 0 , k = 0 , numero , posX , posY;
+      |                                               ^~~~
+sudoku.c:47:40: error: variable ‘posX’ set but not used [-Werror=unused-but-set-variable]
+   47 |   int i = 0 , j = 0 , k = 0 , numero , posX , posY;
+      |                                        ^~~~
+sudoku.c:47:31: error: variable ‘numero’ set but not used [-Werror=unused-but-set-variable]
+   47 |   int i = 0 , j = 0 , k = 0 , numero , posX , posY;
+      |                               ^~~~~~
+sudoku.c:47:23: error: unused variable ‘k’ [-Werror=unused-variable]
+   47 |   int i = 0 , j = 0 , k = 0 , numero , posX , posY;
+      |                       ^
+cc1: all warnings being treated as errors
+Compilation failed
+a81129c
