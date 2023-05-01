@@ -535,3 +535,15 @@ Mon 01 May 2023 01:43:58 AM UTC:
  tests:  2|4
 total_score: 15/70
 ec85d31
+Mon 01 May 2023 01:44:17 AM UTC: 
+ sudoku.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:63:24: error: ‘aux2’ undeclared (first use in this function); did you mean ‘aux’?
+   63 |             print_node(aux2);
+      |                        ^~~~
+      |                        aux
+sudoku.c:63:24: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+aec5be8
