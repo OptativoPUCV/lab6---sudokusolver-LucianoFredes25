@@ -132,6 +132,8 @@ Node* DFS(Node* initial, int* cont){
             push(snack, first(listaAdj));
             popFront(listaAdj);
           }
+        int tamaño = get_size(snack);
+        printf("%d", tamaño);
         return NULL;
       }
     }  
