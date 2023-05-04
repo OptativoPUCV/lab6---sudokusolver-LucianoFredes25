@@ -725,3 +725,9 @@ sudoku.c:47:7: error: variable ‘numero’ set but not used [-Werror=unused-but
 cc1: all warnings being treated as errors
 Compilation failed
 3cf687e
+Thu 04 May 2023 04:17:05 PM UTC: 
+ sudoku.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+ tests:  2|4
+total_score: 15/70
+eb4da1a

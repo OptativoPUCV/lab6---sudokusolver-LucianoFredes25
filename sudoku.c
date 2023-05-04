@@ -44,7 +44,7 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  int numero ;
+  //int numero ;
   int sub , contX = 0;
     
     for(int i = 0 ; i < 9 ; i++)
@@ -64,12 +64,12 @@ int is_valid(Node* n){
         
         if(n->sudo[i][j] != 0)
         {
-          numero = n->sudo[i][j];
+          //numero = n->sudo[i][j];
           for(int k = 0 ; k < 9 ; k++)
           {
             //recorrer submatriz
-            int auxX = 3*(sub/3) + (k/3);
-            int auxY = 3*(sub%3) + (k%3);
+            //int auxX = 3*(sub/3) + (k/3);
+            //int auxY = 3*(sub%3) + (k%3);
             
             /*if(n->sudo[auxX][auxY] == numero && auxX != i && auxY != j) return 0;
             
