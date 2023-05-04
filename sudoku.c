@@ -124,10 +124,8 @@ Node* DFS(Node* initial, int* cont){
       nodoAux = copy(first(snack));
       popFront(snack);
       
-      if(is_final(nodoAux)){
-        printf("%d" , *cont);
+      if(is_final(nodoAux))
         return nodoAux;
-      } 
       else
       {
         List * listaAdj = get_adj_nodes(nodoAux);
