@@ -44,7 +44,7 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  int i = 0 , j = 0 , k = 0 , numero , posX , posY;
+  int i = 0 , j = 0 , k  , numero , posX , posY;
     
     while(i < 9){
       while(j < 9){
