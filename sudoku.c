@@ -125,7 +125,6 @@ Node* DFS(Node* initial, int* cont){
       popFront(snack);
       
       if(is_final(nodoAux)){
-        printf("%d", *cont);
         return nodoAux;
       }
         
