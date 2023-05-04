@@ -69,7 +69,7 @@ int is_valid(Node* n){
           {
             //recorrer submatriz
             int auxX = 3*(sub/3) + (k/3);
-            int auxY = 3*(sub/3) + (k/3);
+            int auxY = 3*(sub%3) + (k%3);
             printf("%d , %d , %d , %d , %d\n", sub , auxX , auxY , numero , n->sudo[auxX][auxY]);
             
             /*if(n->sudo[auxX][auxY] == numero && auxX != i && auxY != j) return 0;
