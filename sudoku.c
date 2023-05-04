@@ -55,7 +55,7 @@ int is_valid(Node* n){
       printf("%d\n ", sub);
       for(int j = 0 ; j < 9 ; j++)
       {
-        printf("%d , %d", contX , sub);
+        printf("%d , %d\n", contX , sub);
         contX++;
         if(contX > 2)
         {
