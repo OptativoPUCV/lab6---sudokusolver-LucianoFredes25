@@ -631,3 +631,9 @@ sudoku.c:48:7: error: unused variable ‘sub’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 393a8e4
+Thu 04 May 2023 03:49:16 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|3
+total_score: 35/70
+5a9ae65
