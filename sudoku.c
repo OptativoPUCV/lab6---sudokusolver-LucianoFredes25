@@ -57,12 +57,12 @@ int is_valid(Node* n){
       {
         printf("%d ,", contX);
         contX++;
-        if(contX > 3)
+        if(contX > 2)
         {
           contX = 0;
           sub++;
         }
-        printf("%d \n", sub);
+        printf("%d\n", sub);
         if(n->sudo[i][j] != 0)
         {
           //numero = n->sudo[i][j];
