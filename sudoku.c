@@ -52,7 +52,7 @@ int is_valid(Node* n){
       sub = 0;
       if(i > 2) sub += 3;
       if(i > 5) sub += 3;
-      printf(" %d", sub);
+      printf(" %d ", sub);
       for(int j = 0 ; j < 9 ; j++)
       {
         contX++;
@@ -62,7 +62,7 @@ int is_valid(Node* n){
           sub++;
           
         }
-        printf(",%d \n", sub);
+        printf("%d \n", sub);
         if(n->sudo[i][j] != 0)
         {
           //numero = n->sudo[i][j];
