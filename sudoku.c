@@ -120,7 +120,7 @@ Node* DFS(Node* initial, int* cont){
   cont = 0;
   while(is_empty(snack) != 1)
     {
-      *cont++;
+      *cont += 1;
       nodoAux = copy(first(snack));
       popFront(snack);
       
