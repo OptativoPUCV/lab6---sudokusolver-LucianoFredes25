@@ -115,6 +115,8 @@ int is_final(Node* n){
 
 Node* DFS(Node* initial, int* cont){
   Stack * snack = createStack(initial);
+  int tamaño = get_size(snack);
+  printf("%d ", tamaño);
   return NULL;
 }
 
