@@ -55,7 +55,7 @@ int is_valid(Node* n){
           while(k < 9)
             {
               if(n->sudo[i][k] == numero && k != posY) return 0;
-              if(n->sudo[k][j] == numero && k != posX) return 0;
+              //if(n->sudo[k][j] == numero && k != posX) return 0;
               k++;
             }
         }
