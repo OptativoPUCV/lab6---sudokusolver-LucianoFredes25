@@ -117,7 +117,7 @@ Node* DFS(Node* initial, int* cont){
   Stack * snack = createStack();
   push(snack , initial);
   Node * nodoAux = createNode();
-  while(is_empty(snack))
+  while(is_empty(snack) != 0)
     {
       nodoAux = copy(first(snack));
       popFront(snack);
