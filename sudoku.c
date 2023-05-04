@@ -93,7 +93,9 @@ List* get_adj_nodes(Node* n){
           while(cont < 10){
             n->sudo[i][j] = cont;
             aux = copy(n);
-            pushBack(list, aux);
+
+            if(is_valid(aux))
+              pushBack(list, aux);
             cont++;
           }
           return list;
