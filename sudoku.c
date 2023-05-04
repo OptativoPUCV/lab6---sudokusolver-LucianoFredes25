@@ -56,9 +56,9 @@ int is_valid(Node* n){
       for(int j = 0 ; j < 9 ; j++)
       {
         contX++;
-        if(contX == 3)
+        if(contX > 3)
         {
-          contX = 0;
+          contX = 1;
           sub++;
         }
         
