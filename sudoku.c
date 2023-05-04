@@ -117,7 +117,7 @@ Node* DFS(Node* initial, int* cont){
   Stack * snack = createStack();
   push(snack , initial);
   
-  while(get_size(snack) != 0)
+  while(is_empty(snack))
     {
       Node * nodoAux = createNode();
       nodoAux = copy(first(snack));
@@ -130,11 +130,10 @@ Node* DFS(Node* initial, int* cont){
         int size = get_size(listaAdj);
         for(int i = 0 ; i < size ; i++)
           {
-            printf("%d ", i);
             push(snack, first(listaAdj));
             popFront(listaAdj);
           }
-        printf("%d", get_size(snack));
+
         return NULL;
       }
     }  
