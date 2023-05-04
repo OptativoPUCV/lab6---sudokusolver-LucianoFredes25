@@ -133,6 +133,7 @@ Node* DFS(Node* initial, int* cont){
             push(snack, first(listaAdj));
             popFront(listaAdj);
           }
+        free(nodoAux);
       }
     }  
   return NULL;
