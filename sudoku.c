@@ -52,6 +52,7 @@ int is_valid(Node* n){
           numero = n->sudo[i][j];
           posX = i;
           posY = j;
+          k=0;
           while(k < 9)
             {
               if(n->sudo[i][k] == numero && k != posY) return 0;
