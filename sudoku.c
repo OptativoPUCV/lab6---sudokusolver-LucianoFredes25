@@ -57,11 +57,7 @@ int is_valid(Node* n){
       {
         printf("%d , %d\n", contX , sub);
         contX++;
-        if(contX > 2)
-        {
-          contX = 0;
-          sub++;
-        }
+        
         
         if(n->sudo[i][j] != 0)
         {
@@ -77,6 +73,11 @@ int is_valid(Node* n){
             if(n->sudo[i][k] == numero && k != j) return 0;
             if(n->sudo[k][j] == numero && k != i) return 0;*/
           }
+        }
+        if(contX > 2)
+        {
+          contX = 0;
+          sub++;
         }
       }
     }
