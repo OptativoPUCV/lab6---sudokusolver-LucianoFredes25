@@ -55,14 +55,14 @@ int is_valid(Node* n){
       printf("%d\n ", sub);
       for(int j = 0 ; j < 9 ; j++)
       {
-        printf("%d ,", contX);
+        printf("%d , %d", contX , sub);
         contX++;
         if(contX > 2)
         {
           contX = 0;
           sub++;
         }
-        printf("%d\n", sub);
+        
         if(n->sudo[i][j] != 0)
         {
           //numero = n->sudo[i][j];
