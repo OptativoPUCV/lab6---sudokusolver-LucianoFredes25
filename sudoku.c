@@ -130,7 +130,7 @@ Node* DFS(Node* initial, int* cont){
 
         printf("%d" , get_size(listaAdj));
         
-        for(int i = 0 ; i < get_size(listaAdj) ; i++)
+        for(int i = 0 ; i <= get_size(listaAdj) ; i++)
           {
             printf("%d ", i);
             push(snack, first(listaAdj));
