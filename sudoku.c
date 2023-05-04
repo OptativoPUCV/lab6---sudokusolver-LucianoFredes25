@@ -70,7 +70,7 @@ int is_valid(Node* n){
             //recorrer submatriz
             int auxX = 3*(sub/3) + (k/3);
             int auxY = 3*(sub/3) + (k/3);
-            if(n->sudo[auxX][auxY] == numero && auxX != j && auxY != i) return 0;
+            if(n->sudo[auxX][auxY] == numero && auxX != i && auxY != j) return 0;
             //recorrer lineas/columnas
             if(n->sudo[i][k] == numero && k != j) return 0;
             if(n->sudo[k][j] == numero && k != i) return 0;
