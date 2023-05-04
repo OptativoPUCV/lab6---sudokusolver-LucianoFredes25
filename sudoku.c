@@ -117,13 +117,17 @@ Node* DFS(Node* initial, int* cont){
   Stack * snack = createStack();
   push(snack , initial);
   Node * nodoAux = createNode();
-
+  cont = 0
   while(is_empty(snack) != 1)
     {
+      cont++;
       nodoAux = copy(first(snack));
       popFront(snack);
       
-      if(is_final(nodoAux)) return nodoAux;
+      if(is_final(nodoAux)){
+        printf("%d" , cont);
+        return nodoAux;
+      } 
       else
       {
         List * listaAdj = get_adj_nodes(nodoAux);
@@ -134,6 +138,7 @@ Node* DFS(Node* initial, int* cont){
             popFront(listaAdj);
           }
         free(nodoAux);
+        
       }
     }  
   return NULL;

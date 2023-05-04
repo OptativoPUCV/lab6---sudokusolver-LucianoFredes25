@@ -952,3 +952,23 @@ Thu 04 May 2023 05:04:07 PM UTC:
  tests:  10|0
 total_score: 70/70
 b17ea46
+Thu 04 May 2023 05:04:55 PM UTC: 
+ sudoku.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:120:11: error: expected ‘;’ before ‘while’
+  120 |   cont = 0
+      |           ^
+      |           ;
+  121 |   while(is_empty(snack) != 1)
+      |   ~~~~~    
+sudoku.c:119:10: error: unused variable ‘nodoAux’ [-Werror=unused-variable]
+  119 |   Node * nodoAux = createNode();
+      |          ^~~~~~~
+sudoku.c:145:1: error: control reaches end of non-void function [-Werror=return-type]
+  145 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+a3be4d9
