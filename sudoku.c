@@ -116,10 +116,9 @@ int is_final(Node* n){
 Node* DFS(Node* initial, int* cont){
   Stack * snack = createStack();
   push(snack , initial);
-  
+  Node * nodoAux = createNode();
   while(is_empty(snack))
     {
-      Node * nodoAux = createNode();
       nodoAux = copy(first(snack));
       popFront(snack);
       
@@ -133,6 +132,7 @@ Node* DFS(Node* initial, int* cont){
             push(snack, first(listaAdj));
             popFront(listaAdj);
           }
+        printf("%d ", get_size(snack));
       }
     }  
   return NULL;
