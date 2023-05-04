@@ -58,7 +58,7 @@ int is_valid(Node* n){
         contX++;
         if(contX > 3)
         {
-          contX = 1;
+          contX = 0;
           sub++;
         }
         
