@@ -118,7 +118,7 @@ Node* DFS(Node* initial, int* cont){
   push(snack , initial);
   Node * nodoAux = createNode();
   printf("%d", is_empty(snack));
-  while(is_empty(snack))
+  while(is_empty(snack) != 1)
     {
       nodoAux = copy(first(snack));
       popFront(snack);
