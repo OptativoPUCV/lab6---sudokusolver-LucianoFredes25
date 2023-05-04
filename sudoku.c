@@ -119,8 +119,18 @@ Node* DFS(Node* initial, int* cont){
   
   while(get_size(snack) != 0)
     {
-      if(is_final(first(snack))) return first(snack);
-      else return 0;
+      Node * nodoAux = createNode();
+      nodoAux = copy(first(snack));
+      popFront(snack);
+      
+      if(is_final(nodoAux)) return nodoAux;
+      else
+      {
+        List * listaAdj = get_adj_nodes(nodoAux);
+        int tamaño = get_size(listaAdj);
+        printf("%d", tamaño);
+        return NULL;
+      }
     }  
   return NULL;
 }
