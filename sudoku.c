@@ -117,7 +117,7 @@ Node* DFS(Node* initial, int* cont){
   Stack * snack = createStack();
   push(snack , initial);
   Node * nodoAux = createNode();
-  cont = 0
+  cont = 0;
   while(is_empty(snack) != 1)
     {
       cont++;

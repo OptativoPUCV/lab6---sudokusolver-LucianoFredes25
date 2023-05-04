@@ -972,3 +972,17 @@ sudoku.c:145:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 a3be4d9
+Thu 04 May 2023 05:05:14 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:128:18: error: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Werror=format=]
+  128 |         printf("%d" , cont);
+      |                 ~^    ~~~~
+      |                  |    |
+      |                  int  int *
+      |                 %ls
+cc1: all warnings being treated as errors
+Compilation failed
+9573ecf
