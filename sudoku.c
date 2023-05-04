@@ -44,18 +44,34 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  int numero  ;
-  //int sub = 0 ;
+  int numero ;
+  int sub , contX = 0;
     
     for(int i = 0 ; i < 9 ; i++)
     {
+      sub = 0;
+      if(i > 2) sub += 3;
+      if(i > 5) sub += 3;
+      
       for(int j = 0 ; j < 9 ; j++)
       {
+        contX++;
+        if(contX == 3)
+        {
+          contX = 0;
+          sub++;
+        }
         
-        if(n->sudo[i][j] != 0){
+        if(n->sudo[i][j] != 0)
+        {
           numero = n->sudo[i][j];
           for(int k = 0 ; k < 9 ; k++)
           {
+            //recorrer submatriz
+            int auxX = 3*(sub/3) + (k/3);
+            int auxY = 3*(sub/3) + (k/3);
+            if(n->sudo[auxX][auxY] == numero && auxX != j && auxY != i) return 0;
+            //recorrer lineas/columnas
             if(n->sudo[i][k] == numero && k != j) return 0;
             if(n->sudo[k][j] == numero && k != i) return 0;
           }
